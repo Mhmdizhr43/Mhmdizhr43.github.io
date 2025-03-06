@@ -1,55 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Muhammad Izhar</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CV - Muhammad Izhar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Muhammad Izhar</h1>
-            <p>Web Developer | PHP Enthusiast | React.js Learner</p>
+            <p>Web Developer | UI/UX Designer | Freelancer</p>
+            <button id="theme-toggle">🌙 Mode Gelap</button>
         </div>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <img src="https://www.clipartmax.com/png/middle/22-228064_yao-ming-face-png-image-yao-ming-meme-hd.png" alt="Your Profile">
-            <h2>Tentang saya</h2>
-            <p>Hello! I am a web developer specializing in PHP and React.js. I enjoy building web applications and continuously learning new technologies.</p>
-        </div>
-    </section>
+    <main>
+        <section class="profile">
+            <img src="images2.jpg" alt="Foto Profil" class="profile-img">
+            <p>Saya adalah seorang mahasiswa Ilmu Komputer dan pengembang web yang memiliki pengalaman dalam teknologi frontend dan backend.</p>
+        </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projek saya</h2>
-            <div class="project">
-                <img src="https://1.bp.blogspot.com/-lbntA-njGV8/VcDDWwzAYPI/AAAAAAAAAFI/JaWgySG-tjU/s1600/urlnbdf.jpg" alt="Project 1">
-                <h3>Project Title 1</h3>
-                <p>Short description of your project.</p>
+        <section class="skills">
+            <h2>Keterampilan</h2>
+            <div class="skill-container">
+                <div class="skill">
+                    <p>HTML</p>
+                    <div class="skill-bar"><div class="progress" data-width="90%"></div></div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="skill-bar"><div class="progress" data-width="85%"></div></div>
+                </div>
+                <div class="skill">
+                    <p>JavaScript</p>
+                    <div class="skill-bar"><div class="progress" data-width="80%"></div></div>
+                </div>
             </div>
-            <div class="project">
-                <img src="https://img2.pngdownload.id/20240208/ck/transparent-minecraft-creeper-green-suited-minecraft-character-with-intense-expr65c5afc468f984.66091253170745440443.jpg" alt="Project 2">
-                <h3>Project Title 2</h3>
-                <p>Short description of your project.</p>
+        </section>
+
+        <section class="experience">
+            <h2>Pengalaman</h2>
+            <div class="experience-container">
+                <div class="experience-item">
+                    <h3>Menempuh Pendidikan S1</h3>
+                    <p>Mahasiswa Ilmu Komputer (2023 - Sekarang)</p>
+                </div>
+                <div class="experience-item">
+                    <h3>UI/UX Designer</h3>
+                    <p>Freelance (2023 - Sekarang)</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: Muhizhar43@gmail.com</p>
-            <p>GitHub: <a href="https://github.com/Mhmdizhr43" target="_blank">https://github.com/Mhmdizhr43</a></p>
-        </div>
-    </section>
+        <section class="projects">
+            <h2>Proyek</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>Website Portfolio</h3>
+                    <p>Website pribadi untuk menampilkan karya.</p>
+                </div>
+                <div class="project">
+                    <h3>Aplikasi Pengingat Jadwal</h3>
+                    <p>Aplikasi untuk memngingat jadwal dengan notifikasi email.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Kontak</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Nama" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Pesan" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+</body>
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Email: Muhizhar43@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/Mhmdizhr43" target="_blank">https://github.com/Mhmdizhr43</a></p>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2025 Muhammad Izhar. All Rights Reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-
+<footer>
+    <p>&copy; 2025 Muhammad Izhar. All Rights Reserved.</p>
+</footer>
 </html>
