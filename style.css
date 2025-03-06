@@ -1,63 +1,152 @@
-body {
-    font-family: 'Times New Roman', Times, serif, sans-serif;
-    margin: 20;
+/* Reset CSS */
+* {
+    margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #e2fffe;
+    box-sizing: border-box;
+}
+
+/* Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    text-align: center;
+    padding: 20px;
 }
 
+/* Header */
 header {
-    background: #333;
-    color: white;
+    background: #3c3d55;
+    color: rgb(255, 255, 255);
     padding: 20px;
 }
 
-header h1 {
-    margin: 30;
+header button {
+    padding: 8px 12px;
+    border: none;
+    background: rgb(63, 61, 82);
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
-#about img {
+/* Profile */
+.profile {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-img {
     width: 150px;
+    height: 150px;
     border-radius: 50%;
-    margin-top: 20px;
+    display: block;
+    margin: 20px auto;
 }
 
-#projects {
+/* Skills */
+.skills {
     padding: 20px;
 }
 
-.project {
-    background: white;
-    padding: 15px;
-    margin: 15px;
-    border-radius: 5px;
-    display: inline-block;
-    width: 45%;
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.project img {
+.skill-bar {
     width: 100%;
+    height: 10px;
+    background: #847c7c;
     border-radius: 5px;
+}
 
-#contact {
-    background: #333;
-    color: rgb(254, 254, 254);
+.progress {
+    height: 10px;
+    background: #38d555;
+    border-radius: 5px;
+    transition: width 1s;
+}
+
+/* Experience & Projects */
+.experience, .projects {
     padding: 20px;
 }
 
-a {
-    color: lightblue;
+.experience-container, .projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-footer {
-    background: #d4ffda;
+.experience-item, .project {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.experience-item:hover, .project:hover {
+    transform: scale(1.05);
+}
+
+/* Contact */
+.contact {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: #919b93;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
     color: white;
+}
+
+.dark-mode .skill-bar {
+    background: #444;
+}
+#contact {
+    background: #1e1b1b;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+{
+    color: rgb(4, 185, 245);
+}
+footer {
+    background: #40ce56;
+    color: rgb(255, 251, 251)32, 11, 11)32, 29, 29);
     padding: 10px;
     text-align: center;
 }
