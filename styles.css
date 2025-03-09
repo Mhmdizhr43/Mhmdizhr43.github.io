@@ -32,9 +32,25 @@ header button {
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
-    color: white;
+}
+/* Navigation styles */
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
 }
 
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255); /* Dark green for navigation links */
+    font-weight: bold;
+    font-size: 0.8rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #6bdd3e; /* Light green on hover */
+}
 /* Profile */
 .profile {
     text-align: center;
@@ -48,7 +64,11 @@ header button {
     display: block;
     margin: 20px auto;
 }
-
+/*About */
+.about {
+    text-align: center;
+    padding: 20px;   
+}
 /* Skills */
 .skills {
     padding: 20px;
@@ -63,7 +83,7 @@ header button {
 .skill-bar {
     width: 100%;
     height: 10px;
-    background: #ccc;
+    background: #847c7c;
     border-radius: 5px;
 }
 
@@ -92,7 +112,6 @@ header button {
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s;
-    background: white;
 }
 
 .experience-item:hover, .project:hover {
@@ -121,12 +140,11 @@ input, textarea {
 
 button {
     background: #919b93;
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 10px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    font-weight: bold;
 }
 
 /* Dark Mode */
@@ -138,17 +156,18 @@ button {
 .dark-mode .skill-bar {
     background: #444;
 }
-
-/* Contact Info */
-#contact-info {
-    background: #1e1b1b;
+#contact {
+    background: #3d3a3a;
     color: rgb(255, 255, 255);
     padding: 20px;
 }
 
+{
+    color: rgb(4, 185, 245);
+}
 footer {
-    background: #40ce56;
-    color: white;
+    background: #4ccc4c;
+    color: rgb(255, 251, 251)32, 11, 11)32, 29, 29);
     padding: 10px;
     text-align: center;
 }
